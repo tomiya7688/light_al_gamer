@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-11-01T11:32:01.873801+00:00",
+  "packets": [
+    {
+      "file": "review\\packet-1.txt",
+      "sha256": "1d91aadb2e8abff5c392baca629f73dbd6673dd464a9c54173fc4b7d607150a0"
+    },
+    {
+      "file": "review\\packet-2.txt",
+      "sha256": "92848e633d2737d845fb6bee5c6c5b1543a732b21f33d48a759e93578f31dab7"
+    },
+    {
+      "file": "review\\packet-3.txt",
+      "sha256": "a3d278f5097313ba59dc0975675539e6e803ecf8968e60ba4a1db92a9eed0560"
+    }
+  ],
+  "attempted_packet": 1,
+  "remaining_packets": "not sent due to the same environment blocker",
+  "reviews": [
+    {
+      "reviewer": "Luna",
+      "status": "not_completed",
+      "reason": "required shared launcher directory/cache outside allowed workspace: access denied"
+    },
+    {
+      "reviewer": "Antigravity",
+      "status": "not_completed",
+      "reason": "required shared launcher directory/cache outside allowed workspace: access denied"
+    },
+    {
+      "reviewer": "Continue",
+      "status": "not_completed",
+      "reason": "required shared launcher directory/cache outside allowed workspace: access denied"
+    },
+    {
+      "reviewer": "Qwen",
+      "status": "not_completed",
+      "reason": "required shared launcher directory/cache outside allowed workspace: access denied"
+    },
+    {
+      "reviewer": "Grok",
+      "status": "not_completed",
+      "reason": "required shared launcher directory/cache outside allowed workspace: access denied"
+    },
+    {
+      "reviewer": "Jules",
+      "status": "not_completed",
+      "reason": "proxy connection refused during token refresh; CLI log access denied"
+    },
+    {
+      "reviewer": "DeepSeekHarness",
+      "status": "not_completed",
+      "reason": "required shared launcher directory/cache outside allowed workspace: access denied"
+    }
+  ]
+}
