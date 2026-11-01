@@ -1,0 +1,9 @@
+{
+  "platform": "win32",
+  "foreground_hwnd": 0,
+  "visible_window_count": 0,
+  "matching_windows": [],
+  "interactive_desktop": false,
+  "dpi_context_ready": true,
+  "input_sent": false
+}

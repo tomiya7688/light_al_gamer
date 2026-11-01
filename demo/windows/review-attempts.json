@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-11-01T12:06:23.119179+00:00",
+  "attempted_packet": "review/windows-packets/0.txt",
+  "packet_sha256": "ffc93018bc70d5aaf9442da7e87a4d59cfa47c451b00c70d4a27f6ad0c665034",
+  "reviews": [
+    {
+      "reviewer": "Luna",
+      "status": "not_completed",
+      "command": "Invoke-LocalReview.ps1 -Reviewer Luna -InputFile review/windows-packets/0.txt -OutputFile review/windows-Luna.json -PublicPacketConfirmed",
+      "exit_code": 1,
+      "error": "Invoke-LocalReview.ps1: Exception calling \"CreateDirectory\" with \"1\" argument(s): \"Access to the path 'E:\\projects\\.review-work\\runs\\b26eee9a-23be-46fb-a1cd-7afbb3b7848b' is denied.\"\r\n"
+    },
+    {
+      "reviewer": "Antigravity",
+      "status": "not_completed",
+      "command": "Invoke-FreeCliReview.ps1 -Reviewer Antigravity -InputFile review/windows-packets/0.txt -OutputFile review/windows-Antigravity.json -PublicPacketConfirmed",
+      "exit_code": 1,
+      "error": "Invoke-FreeCliReview.ps1: Exception calling \"CreateDirectory\" with \"1\" argument(s): \"Access to the path 'E:\\projects\\.review-work\\runs\\a1f37f2c-c41e-4a48-a41f-e0218791bb7f' is denied.\"\r\n"
+    },
+    {
+      "reviewer": "Continue",
+      "status": "not_completed",
+      "command": "Invoke-FreeCliReview.ps1 -Reviewer Continue -InputFile review/windows-packets/0.txt -OutputFile review/windows-Continue.json -PublicPacketConfirmed",
+      "exit_code": 1,
+      "error": "Invoke-FreeCliReview.ps1: Exception calling \"CreateDirectory\" with \"1\" argument(s): \"Access to the path 'E:\\projects\\.review-work\\runs\\7bd298b5-c1cd-4f12-87fe-394604d9df16' is denied.\"\r\n"
+    },
+    {
+      "reviewer": "Qwen",
+      "status": "not_completed",
+      "command": "Invoke-FreeCliReview.ps1 -Reviewer Qwen -InputFile review/windows-packets/0.txt -OutputFile review/windows-Qwen.json -PublicPacketConfirmed",
+      "exit_code": 1,
+      "error": "Invoke-FreeCliReview.ps1: Exception calling \"CreateDirectory\" with \"1\" argument(s): \"Access to the path 'E:\\projects\\.review-work\\runs\\60b69aa3-d44b-45de-b9a4-194f13a5bb74' is denied.\"\r\n"
+    },
+    {
+      "reviewer": "Grok",
+      "status": "not_completed",
+      "command": "Invoke-FreeCliReview.ps1 -Reviewer Grok -InputFile review/windows-packets/0.txt -OutputFile review/windows-Grok.json -PublicPacketConfirmed",
+      "exit_code": 1,
+      "error": "Invoke-FreeCliReview.ps1: Exception calling \"CreateDirectory\" with \"1\" argument(s): \"Access to the path 'E:\\projects\\.review-work\\runs\\4ef56906-c5db-42c3-b08a-19703159d83b' is denied.\"\r\n"
+    },
+    {
+      "reviewer": "DeepSeekHarness",
+      "status": "not_completed",
+      "command": "Invoke-ExtraFreeReview.ps1 -Reviewer DeepSeekHarness -InputFile review/windows-packets/0.txt -OutputFile review/windows-DeepSeekHarness.json -PublicPacketConfirmed",
+      "exit_code": 1,
+      "error": "Set-Content: E:\\projects\\.review-tools\\Invoke-ExtraFreeReview.ps1:166\r\nLine |\r\n 166 |  \ufffdc rtTo-Json -Depth 8 | Set-Content -LiteralPath $cache -Encoding utf8 }\r\n     |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | Access to the path\r\n     | 'E:\\projects\\.review-work\\extra-free\\3FF64B6BC3B14FBE249C8CB88B73B2B54445BE00D837ADAF1BD2FC96F94A50AE.json' is\r\n     | denied.\r\n"
+    },
+    {
+      "reviewer": "Jules",
+      "status": "not_completed",
+      "command": "jules remote list --repo",
+      "error": "Proxy 127.0.0.1:9 refused connection; token refresh and repository listing failed; CLI log access denied."
+    }
+  ],
+  "scope": "Shared launcher failed before sending the packet; other units and final revisions remain externally unreviewed"
+}

@@ -121,9 +121,8 @@ def make_replay(output: Path) -> None:
     images = []
     for path in selected:
         with Image.open(path) as image:
-            images.append(
-                image.resize((320, 400)).convert("P", palette=Image.Palette.ADAPTIVE)
-            )
+            image.thumbnail((480, 400))
+            images.append(image.convert("P", palette=Image.Palette.ADAPTIVE))
     images[0].save(
         output / "replay.gif",
         save_all=True,
@@ -148,6 +147,8 @@ def make_replay(output: Path) -> None:
                 str(output / "screenshots" / "%04d.png"),
                 "-c:v",
                 "libx264",
+                "-vf",
+                "pad=ceil(iw/2)*2:ceil(ih/2)*2",
                 "-pix_fmt",
                 "yuv420p",
                 str(output / "replay.mp4"),

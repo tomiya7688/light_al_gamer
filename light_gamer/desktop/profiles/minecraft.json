@@ -1,0 +1,24 @@
+{
+  "name": "minecraft_explore",
+  "perception": "minecraft",
+  "actions": {
+    "forward": {"keys": ["w"], "seconds": 0.4},
+    "backward": {"keys": ["s"], "seconds": 0.3},
+    "strafe_left": {"keys": ["a"], "seconds": 0.3},
+    "strafe_right": {"keys": ["d"], "seconds": 0.3},
+    "jump_forward": {"keys": ["w", "space"], "seconds": 0.4},
+    "turn_left": {"mouse_delta": [-180, 0], "seconds": 0.1},
+    "turn_right": {"mouse_delta": [180, 0], "seconds": 0.1},
+    "look_up": {"mouse_delta": [0, -80], "seconds": 0.1},
+    "look_down": {"mouse_delta": [0, 80], "seconds": 0.1},
+    "mine": {"buttons": ["left"], "seconds": 3.2},
+    "use": {"buttons": ["right"], "seconds": 0.15},
+    "inventory": {"keys": ["e"], "seconds": 0.15},
+    "close_menu": {"keys": ["escape"], "seconds": 0.15},
+    "point_click": {"buttons": ["left"], "aim": true, "seconds": 0.15},
+    "point_use": {"buttons": ["right"], "aim": true, "seconds": 0.15},
+    "hotbar_next": {"wheel": -1, "seconds": 0.1},
+    "hotbar_previous": {"wheel": 1, "seconds": 0.1},
+    "wait": {"seconds": 0.2}
+  }
+}

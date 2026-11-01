@@ -1,0 +1,23 @@
+{
+  "name": "generic_keyboard_mouse",
+  "perception": "generic",
+  "actions": {
+    "forward": {"keys": ["w"], "seconds": 0.3},
+    "backward": {"keys": ["s"], "seconds": 0.3},
+    "left": {"keys": ["a"], "seconds": 0.3},
+    "right": {"keys": ["d"], "seconds": 0.3},
+    "arrow_left": {"keys": ["left"], "seconds": 0.15},
+    "arrow_right": {"keys": ["right"], "seconds": 0.15},
+    "arrow_up": {"keys": ["up"], "seconds": 0.15},
+    "arrow_down": {"keys": ["down"], "seconds": 0.15},
+    "jump": {"keys": ["space"], "seconds": 0.2},
+    "turn_left": {"mouse_delta": [-120, 0], "seconds": 0.1},
+    "turn_right": {"mouse_delta": [120, 0], "seconds": 0.1},
+    "click": {"buttons": ["left"], "seconds": 0.15},
+    "right_click": {"buttons": ["right"], "seconds": 0.15},
+    "point_click": {"buttons": ["left"], "aim": true, "seconds": 0.15},
+    "scroll_up": {"wheel": 1, "seconds": 0.1},
+    "scroll_down": {"wheel": -1, "seconds": 0.1},
+    "wait": {"seconds": 0.2}
+  }
+}

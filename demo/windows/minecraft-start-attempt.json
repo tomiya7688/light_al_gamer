@@ -1,0 +1,5 @@
+{
+  "status": "startup_blocked",
+  "error": "Expected exactly one matching game window, found 0; use --list-windows and --hwnd",
+  "input_sent": false
+}

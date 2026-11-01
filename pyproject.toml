@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "light-al-gamer"
-version = "0.1.0"
-description = "Screenshot-only autonomous 2048 player"
+version = "0.2.0"
+description = "Screenshot-only game agents with 2048 and Windows keyboard/mouse backends"
 requires-python = ">=3.11"
 authors = [{name = "Tomiya"}]
 dependencies = ["Pillow==12.3.0"]
@@ -15,9 +15,13 @@ dev = ["pytest==9.1.1", "ruff==0.15.22"]
 
 [project.scripts]
 light-gamer = "light_gamer.runner:main"
+light-gamer-desktop = "light_gamer.desktop.__main__:main"
 
 [tool.setuptools.packages.find]
 include = ["light_gamer*"]
+
+[tool.setuptools.package-data]
+"light_gamer.desktop" = ["profiles/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

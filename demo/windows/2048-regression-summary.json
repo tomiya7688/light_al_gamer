@@ -1,0 +1,13 @@
+{
+  "status": "turn_limit",
+  "turns": 150,
+  "score_from_merges": 2068,
+  "max_tile": 256,
+  "recognition_errors": 0,
+  "transition_errors": 0,
+  "capture_backend": "game-rendered PNG framebuffer (not desktop capture)",
+  "elapsed_seconds": 6.183,
+  "seed": 7,
+  "search_depth": 2,
+  "requested_turns": 150
+}

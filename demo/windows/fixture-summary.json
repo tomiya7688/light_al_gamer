@@ -1,0 +1,11 @@
+{
+  "profile": "minecraft_explore",
+  "status": "step_limit",
+  "steps": 100,
+  "requested_steps": 100,
+  "capture_backend": "ScreenshotFixturePort",
+  "goal_achievement": "not_verified",
+  "policy": "MinecraftExplorePolicy",
+  "model": null,
+  "elapsed_seconds": 4.849
+}

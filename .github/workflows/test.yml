@@ -2,10 +2,11 @@ name: tests
 on: [push, pull_request]
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         python: ['3.11', '3.14']
+        os: [ubuntu-latest, windows-latest]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -15,3 +16,6 @@ jobs:
       - run: python -m ruff check .
       - run: python -m ruff format --check .
       - run: python -m pytest -q
+      - name: Probe Windows desktop without input
+        if: runner.os == 'Windows'
+        run: python -m light_gamer.desktop --probe --output artifacts/ci-desktop-probe
